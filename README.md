@@ -57,7 +57,7 @@ public class ExampleDearImGuiEntrypoint implements DearImGuiEntrypoint {
 
 Both ultimately achieve the same goal, but `createRenderer` is more flexible and allows you to pass in additional parameters to your renderer.
 
-### Example Renderer
+### Example Rendering
 
 ```java
 public class ExampleImGuiRenderer implements ImGuiRenderer {
@@ -67,6 +67,17 @@ public class ExampleImGuiRenderer implements ImGuiRenderer {
         ImGui.showDemoWindow();
     }
 
+}
+```
+
+```java
+public class ExampleDearImGuiEntrypoint implements DearImGuiEntrypoint {
+
+    @Override
+    public void render() {
+        ImGui.showDemoWindow();
+    }
+    
 }
 ```
 
