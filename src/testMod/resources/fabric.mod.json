@@ -1,0 +1,17 @@
+{
+    "schemaVersion": 1,
+    "id": "test-mod",
+    "version": "1.0.0",
+    "name": "Test Mod",
+    "description": "A test mod for testing purposes.",
+    "environment": "client",
+    "entrypoints": {
+        "imgui": [
+            "testmod.imgui.TestModDearImGuiEntrypoint"
+        ]
+    },
+    "depends": {
+        "minecraft": "*",
+        "fabricloader": ">=0.15.11"
+    }
+}

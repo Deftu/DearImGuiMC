@@ -1,0 +1,12 @@
+{
+    "required": true,
+    "package": "dev.deftu.imgui.mixins",
+    "compatibilityLevel": "${java_version}",
+    "injectors": {
+        "defaultRequire": 1
+    },
+    "client": [
+        "client.Mixin_ImGuiWindow",
+        "client.Mixin_RenderImGui"
+    ]
+}
