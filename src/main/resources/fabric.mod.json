@@ -18,7 +18,7 @@
         "client": [
             {
                 "adapter": "kotlin",
-                "value": "dev.deftu.imgui.ImGuiClient"
+                "value": "dev.deftu.imgui.DearImGuiClient"
             }
         ]
     },
