@@ -20,7 +20,7 @@ repositories {
 }
 
 dependencies {
-    modImplementation("dev.deftu:DearImGui-<MINECRAFTVERSION>-fabric:<VERSION>")
+    modImplementation("dev.deftu:dearimguimc-<MINECRAFTVERSION>-fabric:<VERSION>")
 }
 ```
 Of course, replace `<MINECRAFTVERSION>` with the version of Minecraft you are developing for, and `<VERSION>` with the version of the library you want to use.
@@ -41,7 +41,7 @@ To render for ImGui, you need to create your own `DearImGuiEntrypoint` and add i
 
 ```java
 public class ExampleDearImGuiEntrypoint implements DearImGuiEntrypoint {
-    
+
     @Override
     public ImGuiRenderer createRenderer() {
         return new ExampleImGuiRenderer();
@@ -51,7 +51,7 @@ public class ExampleDearImGuiEntrypoint implements DearImGuiEntrypoint {
     public void render() {
         // Render ImGui here
     }
-    
+
 }
 ```
 
