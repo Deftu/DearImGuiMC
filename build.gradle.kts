@@ -10,6 +10,7 @@ plugins {
     id("dev.deftu.gradle.tools.resources")
     id("dev.deftu.gradle.tools.bloom")
     id("dev.deftu.gradle.tools.shadow")
+    id("dev.deftu.gradle.tools.publishing.maven")
     id("dev.deftu.gradle.tools.minecraft.api")
     id("dev.deftu.gradle.tools.minecraft.loom")
     id("dev.deftu.gradle.tools.minecraft.releases")
@@ -32,6 +33,10 @@ toolkitReleases {
         projectId.set("I16j44CK")
         dependencies.add(ModDependency("Ha28R6CL", DependencyType.REQUIRED)) // Fabric Language Kotlin
     }
+}
+
+toolkitMavenPublishing {
+    forceLowercase.set(true)
 }
 
 dependencies {
